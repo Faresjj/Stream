@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/Home.module.css'
 import { Navbar, Container, Nav, NavDropdown, Button, Form, FormControl } from 'react-bootstrap';
 
 

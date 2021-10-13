@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/Home.module.css'
 import Menu from '../components/menu.js'
-import {ListGroup, Row, Col, Card, CardDeck, Carousel} from 'react-bootstrap'
+import {ListGroup, Row, Col, Card, CardGroup, Carousel} from 'react-bootstrap'
 
 
 
@@ -18,45 +18,9 @@ export default function Home() {
       
         <Menu/>
         
-        <CardDeck >
-        <Carousel style={{width:"400px", height:"300px"}}>
-  <Carousel.Item interval={1000}>
-    <img
-      className="d-block w-100"
-      src="image-17.jpg"
-      alt="First slide"
-    />
-    <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item interval={500}>
-    <img
-      className="d-block w-100"
-      src="image-9.jpg"
-      alt="Second slide"
-    />
-    <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-  <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="image-3.jpg"
-      alt="Third slide"
-    />
-    <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-    </Carousel.Caption>
-  </Carousel.Item>
-</Carousel>
-
-       
-
+        <CardGroup >
+        <Card style={{backgroundColor:"rgb(0,71,103)"}}>
+        </Card>
         
         <Row style={{backgroundColor:"rgb(0,71,103)", width:"300px"}}>
     <Col sm={4}>
@@ -91,7 +55,7 @@ export default function Home() {
       </ListGroup>
     </Col>
   </Row>
-  </CardDeck>
+  </CardGroup>
   
   <Row xs={10} md={3} className="g-4" style={{backgroundColor:"rgb(0,71,103)", color:"white", padding: "10px"}}>
   {Array.from({ length: 30 }).map((_, idx) => (
